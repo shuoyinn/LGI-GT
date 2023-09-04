@@ -1,0 +1,48 @@
+
+
+===============================================
+2023-05-09 01:21:52
+
+configs: configs/ogbg-code2.yml
+dataset_name: ogbg-code2
+max_seq_len: 5
+num_vocab: 5000
+max_input_len: 1000
+segment_pooling: sum
+num_rw_steps: None
+dim_pe: None
+in_dim: None
+out_dim: None
+node_num_types: None
+edge_num_types: None
+epochs: 30
+scheduler: linear
+warmup: 5
+batch_size: 32
+lr: 0.0002
+weight_decay: 1e-06
+gconv_dim: 256
+tlayer_dim: 256
+gconv_attn_dropout: None
+gconv_ffn_dropout: 0.0
+tlayer_attn_dropout: 0.0
+tlayer_ffn_dropout: 0.4
+tlayer_ffn_hidden_times: 4
+gconv_type: gcn
+num_layers: 4
+num_heads: 4
+middle_layer_type: mlp
+skip_connection: none
+readout: cls
+norm: ln
+out_layer: 1
+out_hidden_times: 1
+save_state: True
+seeds: 666
+
+
+Run time: 45102.39296657406
+Best Epoch: 27
+Val: 0.1775
+Test Score: 0.1945
+

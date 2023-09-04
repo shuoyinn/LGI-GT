@@ -1,0 +1,48 @@
+
+
+===============================================
+2023-05-09 13:21:47
+
+configs: configs/ogbg-molpcba.yml
+dataset_name: ogbg-molpcba
+max_seq_len: None
+num_vocab: None
+max_input_len: None
+segment_pooling: None
+num_rw_steps: None
+dim_pe: None
+in_dim: None
+out_dim: 128
+node_num_types: None
+edge_num_types: None
+epochs: 100
+scheduler: linear
+warmup: 10
+batch_size: 256
+lr: 0.0002
+weight_decay: 0.0001
+gconv_dim: 384
+tlayer_dim: 384
+gconv_attn_dropout: 0.0
+gconv_ffn_dropout: 0.3
+tlayer_attn_dropout: 0.3
+tlayer_ffn_dropout: 0.3
+tlayer_ffn_hidden_times: 2
+gconv_type: eela
+num_layers: 5
+num_heads: 8
+middle_layer_type: none
+skip_connection: short
+readout: cls
+norm: ln
+out_layer: 1
+out_hidden_times: 1
+save_state: True
+seeds: 666
+
+
+Run time: 18524.694008382037
+Best Epoch: 97
+Val: 0.3160
+Test Score: 0.3017
+

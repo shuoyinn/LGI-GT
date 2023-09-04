@@ -1,0 +1,48 @@
+
+
+===============================================
+2023-05-08 15:03:11
+
+configs: configs/pattern.yml
+dataset_name: PATTERN
+max_seq_len: None
+num_vocab: None
+max_input_len: None
+segment_pooling: None
+num_rw_steps: 7
+dim_pe: 16
+in_dim: 3
+out_dim: 2
+node_num_types: None
+edge_num_types: None
+epochs: 100
+scheduler: none
+warmup: 5
+batch_size: 32
+lr: 0.0003
+weight_decay: 1e-05
+gconv_dim: 64
+tlayer_dim: 64
+gconv_attn_dropout: None
+gconv_ffn_dropout: 0.0
+tlayer_attn_dropout: 0.3
+tlayer_ffn_dropout: 0.3
+tlayer_ffn_hidden_times: 2
+gconv_type: gcn
+num_layers: 6
+num_heads: 4
+middle_layer_type: residual
+skip_connection: short
+readout: None
+norm: bn
+out_layer: 1
+out_hidden_times: 1
+save_state: True
+seeds: 666
+
+
+Run time: 4544.2775228358805
+Best Epoch: 83
+Val: 0.8678
+Test Score: 0.8691
+

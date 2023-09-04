@@ -1,0 +1,33 @@
+
+dataset_name: ogbg-molpcba 
+
+out_dim: 128 
+
+epochs: 100 
+scheduler: linear 
+warmup: 10 
+batch_size: 256 
+lr: 0.0002 
+weight_decay: 1e-4 
+
+gconv_dim: 384
+tlayer_dim: 384
+
+gconv_attn_dropout: 0 
+gconv_ffn_dropout: 0.3 
+tlayer_attn_dropout: 0.3 
+tlayer_ffn_dropout: 0.3 
+tlayer_ffn_hidden_times: 2 
+
+gconv_type: eela 
+num_layers: 5 
+num_heads: 8 
+middle_layer_type: none 
+skip_connection: short 
+readout: cls 
+norm: ln 
+
+out_layer: 1 
+
+save_state = True 
+seeds: 666 

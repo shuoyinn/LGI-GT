@@ -1,0 +1,48 @@
+
+
+===============================================
+2023-05-08 00:08:03
+
+configs: configs/zinc.yml
+dataset_name: ZINC
+max_seq_len: None
+num_vocab: None
+max_input_len: None
+segment_pooling: None
+num_rw_steps: 20
+dim_pe: 28
+in_dim: None
+out_dim: 1
+node_num_types: 28
+edge_num_types: 4
+epochs: 2000
+scheduler: linear
+warmup: 50
+batch_size: 32
+lr: 0.001
+weight_decay: 1e-05
+gconv_dim: 64
+tlayer_dim: 64
+gconv_attn_dropout: None
+gconv_ffn_dropout: 0.0
+tlayer_attn_dropout: 0.5
+tlayer_ffn_dropout: 0.0
+tlayer_ffn_hidden_times: 2
+gconv_type: gin
+num_layers: 10
+num_heads: 4
+middle_layer_type: residual
+skip_connection: short
+readout: add
+norm: bn
+out_layer: 3
+out_hidden_times: 8
+save_state: True
+seeds: 0
+
+
+Run time: 62131.502561232075
+Best Epoch: 1607
+Val: 0.0814
+Test Score: 0.0682
+

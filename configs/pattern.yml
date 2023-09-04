@@ -1,0 +1,34 @@
+
+dataset_name: PATTERN 
+
+num_rw_steps: 7 
+dim_pe: 16 
+in_dim: 3 
+out_dim: 2 
+
+epochs: 100
+scheduler: none 
+# warmup: do not use 
+batch_size: 32 
+lr: 0.0003 
+weight_decay: 1e-5 
+
+gconv_dim: 64 
+tlayer_dim: 64 
+
+gconv_ffn_dropout: 0 
+tlayer_attn_dropout: 0.3 
+tlayer_ffn_dropout: 0.3 
+tlayer_ffn_hidden_times: 2 
+
+gconv_type: gcn 
+num_layers: 6 
+num_heads: 4 
+middle_layer_type: residual 
+skip_connection: short 
+norm: bn 
+
+out_layer: 1 
+
+save_state = True 
+seeds: 666 
