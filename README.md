@@ -66,6 +66,8 @@ Please cite our paper if our code is useful for your research:
 ```
 @article{yinlgi,
   title={LGI-GT: Graph Transformers with Local and Global Operators Interleaving},
-  author={Yin, Shuo and Zhong, Guoqiang}
+  author={Yin, Shuo and Zhong, Guoqiang},
+  booktitle = {IJCAI},
+  year = {2023}
 }
 ```
